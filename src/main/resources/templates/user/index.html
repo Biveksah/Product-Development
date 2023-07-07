@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="" xmlns:th="https://thymeleaf.org">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
+  <title th:text="${title}"></title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="/images/olympia.jpg" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                 Kathmandu, Nepal
+              </span>
+            </a>
+            <a href="" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +977 986-111111
+              </span>
+            </a>
+            <a href="" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                olympicgames@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" th:href="@{/}">
+              <span>
+                <img src="/images/logo.png" alt="" style="height: 70px; width: 90px;">
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/gameNews}" href=""> Games and News </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/about}" href=""> About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/live}"> G0 Live  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/contact}"> Contact Us </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/register}">Register</a>
+                </li>
+                <li class="nav-item" style="background-color: red; border-radius: 3px;">
+                  <a class="nav-link" th:href="@{/login}" >Login</a>
+                </li>
+                <li class="nav-item" style="background-color: #beaaaa; border-radius: 3px;">
+                  <a class="nav-link" th:href="@{/logout}" >Logout</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-7">
+                  <div class="detail-box">
+                    <h1>
+                      Football Live Streaming !!!
+                    </h1>
+                    <p>
+                      "Enjoy your live-streaming"
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" th:href="@{/live}" class="btn-2">Go Live</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-7">
+                  <div class="detail-box">
+                    <h1>
+                      Basketball Streaming
+                    </h1>
+                    <p>
+                      "Enjoy your live-streaming"
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" th:href="@{/live}" class="btn-2">Go Live</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-7">
+                  <div class="detail-box">
+                    <h1>
+                     Go Live to watch More live streams !!!
+                    </h1>
+                    <p>
+                      "Here's to love, laughter, and happily ever after"
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" th:href="@{/live}" class="btn-2">Go Live</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container idicator_container">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- Games section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          LiveStreaming  News
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="/images/archeryLogo.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Archery
+              </h6>
+              <p>
+                Archery World Cup 2023 Medellin: Indian Recurve Men's Team Wins Bronze Medal After Defeating China...
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="/images/basketballLogo.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                BasketBall
+              </h6>
+              <p>
+                Skeletons jumping around, drinking beers, dancing and crying' - Aussie greats celebrate long-awaited bronze...
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="/images/footballlogo.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Football
+              </h6>
+              <p>
+                Footballer Benjamin Mendy Faces Retrial For Alleged Sex Offences !!!!
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="/images/hockeyLogo.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Hockey
+              </h6>
+              <p>
+                Special Olympics & the International Hockey Federation sign partnership in Berlin to celebrate the introduction of hockey as a sport at World Games.
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end Games section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="/images/aboutUs.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Who Are We?
+              </h2>
+            </div>
+            <p>
+              Welcome to our website! We provide live-streaming of the Tokyo 2020 Olympic Games, bringing you the exhilarating sporting events and incredible moments directly to your screen. Experience the thrill, triumphs, and global celebration of sportsmanship through our high-definition video and real-time commentary.
+              Join us as we connect fans from around the world and share the journey of world-class athletes.
+            </p>
+            <div class="btn-box">
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <section class="country_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Choose Your Games to Watch
+        </h2>
+        <p>
+          Select Games you want to Watch Online
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Hockey.jpeg" alt="">
+            <div class="detail-box">
+              <h3>
+                Hockey
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Football.jpg" alt="">
+            <div class="detail-box">
+              <h3>
+                Football
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Football.jpg" alt="">
+            <div class="detail-box">
+              <h3>
+                Tennis
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Archery.jpeg" alt="">
+            <div class="detail-box">
+              <h3>
+                Archery
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Diving.jpeg" alt="">
+            <div class="detail-box">
+              <h3>
+                Diving
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/BasketBall.jpeg" alt="">
+            <div class="detail-box">
+              <h3>
+                BasketBall
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Futsal.jpeg" alt="">
+            <div class="detail-box">
+              <h3>
+                Futsal
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" th:href="@{/liveVideo}" class="box">
+            <img src="/images/Chess.jpeg" alt="">
+            <div class="detail-box">
+              <h3>
+                Many More...
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="contact_bg_box">
+      <img src="/images/olympicContact.jpeg" alt="">
+    </div>
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Contact Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-9 mx-auto">
+          <div class="form_container">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Phone Number" />
+                </div>
+              </div>
+              <div class="form-group ">
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn-box">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+         User Feedback 
+        </h2>
+      </div>
+      <div class="client_container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="/images/client1.png" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Rishi Mishra
+                  </h5>
+                  <h6>
+                    Videoshoot Client
+                  </h6>
+                  <p>
+                    The Photography Firm managed to squeeze us in last minute when we were in a tricky situation and were so efficient to work with. The work/photos they did are excellent, they went above and beyond and were so friendly. Would highly recommend.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client2.png" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Anand Bista
+                  </h5>
+                  <h6>
+                    Photoshoot Client
+                  </h6>
+                  <p>
+                    Many thanks for the photos, they are brilliant and better than I imagined. The whole team was brilliant to work with and your flexible approach and willingness was truly excellent. I am now proud that we have images that really stand out and showcase our products. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="/images/Football .png" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Binaya Joshi
+                  </h5>
+                  <h6>
+                    BartaBanda Client
+                  </h6>
+                  <p>
+                    Good value and quick turn around for professional photos required to contact with city films. Also used on your website. I'm going back for the next shoot!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="/images/client4.jpg" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Paras Ayer
+                  </h5>
+                  <h6>
+                    Reception Client
+                  </h6>
+                  <p>
+                    The Photography Firm managed to squeeze us in last minute when we were in a tricky situation and were so efficient to work with. The work/photos they did are excellent, they went above and beyond and were so friendly. Would highly recommend.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" th:href="@{/}" href="">
+              <span>
+                Olympic Games
+              </span>
+            </a>
+            <p>
+              "Here's to love, laughter, and happily ever after"
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Our Streaming
+            </h5>
+            <ul>
+              <li>
+                <a href="">
+                  Football
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Basketball
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Swimming
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Hockey
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contact Us
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+               Kathmandu, Nepal
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +977 986-11111
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                info.olympicgames@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://html.design/">Olympic games</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="/js/custom.js"></script>
+
+
+</body>
+
+</html>
